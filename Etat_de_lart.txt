@@ -1,0 +1,32 @@
+Etat de l'art
+
+Diagnose / Detection :
+
+En regle generale un depistage de H. Pylori se fait lorsque un patient presente certains des symptomes suivants [1]:
+	peines abdominales
+	nausees et vaumissements
+	anemie
+	halitose
+
+Les outils de diagnositques les plus frequements utilises sont [2]:
+	Tests de l'haleine. La bacterie modifiant certaines substances dans l'estomac, il est possible de faire ingerer au patient de l'uree legerement radioactif et de mesurer la presence des transformats.
+	Tests sanguins. Comme les tests sanguins ne detectent uniquement la presence d'anticorps contre cette bacterie, il deviennent inefficaces apres vaccination et/ou premiere infections.
+	Examen des selles. Des traces de H. Pylori peuvent etre detectees dans les celles d'un patient affecte.
+	Biopsie. La biopsie est la methode la plus invasive mais la plus precise. Elle se fait lors d'une endoscopie. En raison de son charactere invasif, une biopsie n'est normalement utilise uniquement si le patient doit subir une endoscopie pour d'autres raisons (traitement de saignements internes, verification de presence de cellules cancereuses, ...).
+
+Traitement [3][4]:
+
+H. Pylori est traitable par des antibiotiques. Du a une proliferation de bacteries resistante aux antibiotiques, les traitements conceilles sont des traitements triple. Ils combinent en regle generale deux antibiotiques avec des Inhibiteur de la pompe à protons (IPP). L'action de l'IPP est de diminuer la production d'acide gastrique. L'IPP est indispencable a ce genre de traitement, les antibiotiques n'etant pas efficaces en milieux acides.
+
+Prevention :
+
+Les regles d'hygiene standard s'appliquent a la prevention contre l'infection avec H. Pylori (ce nettoyer les mains, ne pas partager les verres, ...)[4].
+Dans un article publie en 2015 dans le lancet, un groupe de medecin chinois a evalue l'efficacite d'un vaccin contre H. Pylori developpe en 2005. Ils evalue le succes de ce vaccin a environ 70% mais se montrent encore dubitatif quant au long-terme[5].
+ImevaX, une start-up co-fondee par l'universite technique de Munich a annnonce en 2014 avoir cree un vaccin qui aurait une efficacite sterilisante de 80% dans les souris. Des tests cliniques sont prevus pour le debut de l'annee 2016 pour verifier ces proprietes dans l'humain[6].
+
+[1]http://www.medicinenet.com/helicobacter_pylori/article.htm
+[2]https://www.nlm.nih.gov/medlineplus/ency/article/007501.htm
+[3]http://emedicine.medscape.com/article/176938-treatment
+[4]http://www.cdc.gov/ulcer/files/hpfacts.PDF
+[5]http://www.thelancet.com/journals/lancet/article/PIIS0140-6736%2815%2960310-5/abstract
+[6]http://www.technologist.eu/towards-the-first-helicobacter-pylori-vaccine/
