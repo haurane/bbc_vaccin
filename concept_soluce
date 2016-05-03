@@ -1,0 +1,5 @@
+Conception de la solution :
+Nous avons identifié la proteine urease comme protéine d'identification de la bactérie.
+Nous allons donc faire des tests sur la sous-unite B (id swiss-prot P69996) de l'uréase.
+
+Afin de pouvoir identifier H. pylori, nous devons touver des epitopes issus de l'uréase-B. Nous allons utiliser les outils fournis par IEDB Analysis Resource (http://tools.immuneepitope.org/tools/bcell/iedb_input) ansi que de SVMTrip.
