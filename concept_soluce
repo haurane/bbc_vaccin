@@ -1,5 +1,26 @@
 Conception de la solution :
+
+Comme décrit dans la séction 2, l'helicobacter pylori peut être identifiée grâce à la protéine Uréase, plus spécifiquement sa sous-unité beta. Afin de créer nôtre liste de péptides à synthétiser pour le vaccin, nous devons trouver dans cette protéine des épitopes permettant d'identifier la bactérie, quelle que soit ca provenance.
+
+Premièremement nous alons procéder à une prédiction d'épitopes. (italics)An introduction to epitope prediction methods and software(/italics)[1] donne un apercu des méthodes de prédiction disponible. Nous avons trouvés deux outils de préditcion d'épitopes linéaires, IEDB Analysis Resource (http://tools.immuneepitope.org/bcell/) et SVMTrip (http://sysbio.unl.edu/SVMTriP/). De ses résultats nous prendrons des chaines d'acides aminés de longueure d'environ 20. Si les résultats fournissent des chaines significativement plus longues nous en extrairerons une sous chaine de 20 acides. Si les résultats donne des score de prédiction localisable ceux-ci seront pris en compte pour le choix de la sous-chaine. N'ayant pas d'outils permettant d'automatiser la prédiction nous feront les recherches "à la main" et sauvegarderont les résultats dans un fichier texte.
+
+Un code python similaire à celui du laboratoire 2 permettera ensuite de récuperer de la base de donnée genebank 
+
+
+
+
+
+
+
+
+
+
+
+
 Nous avons identifié la proteine urease comme protéine d'identification de la bactérie.
 Nous allons donc faire des tests sur la sous-unite B (id swiss-prot P69996) de l'uréase.
 
-Afin de pouvoir identifier H. pylori, nous devons touver des epitopes issus de l'uréase-B. Nous allons utiliser les outils fournis par IEDB Analysis Resource (http://tools.immuneepitope.org/tools/bcell/iedb_input) ansi que de SVMTrip.
+Afin de pouvoir identifier H. pylori, nous devons touver des epitopes issus de l'uréase-B. Nous allons utiliser les outils fournis par IEDB Analysis Resource (http://tools.immuneepitope.org/tools/bcell/iedb_input) ansi que de SVMTrip (http://sysbio.unl.edu/SVMTriP/).
+
+Une fois ces epitopes prédits il faut comparer dans les differentes souches de Ure-B les sequence correspondantes à nos épitopes. Nous utiliserons pour cela les methodes d'alignements vues en cours, et attribueront à chaque épitope prédit un score. Suivant le nombre d'épitopes prédits et leur score nous choisirons ensuite les candidats les plus attirants.
+
