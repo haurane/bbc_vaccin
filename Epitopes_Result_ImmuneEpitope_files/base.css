@@ -1,0 +1,603 @@
+/* css  - common to all tools */
+
+/* warning text for site maintenance */
+.maintenance span:before {
+	content: "\2716\20";  /* adds a red cross before the error message */
+}
+.maintenance{
+	color: #e9322d;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 20px;
+}
+
+/* the main content wrapper */
+#content {
+	margin:5px 10px;
+}
+
+/* footer wrapper */
+#footer {
+	margin:10px 0 10px 10px;
+}
+
+.pre {
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+	font-family: Consolas, monospace;
+}
+
+/* user input form errorlist */
+ul.errorlist {
+	margin: 5px 0;
+	display: inline-block;
+	list-style-type: none;
+	width: auto;
+	max-width: 50%;
+	word-wrap: break-word;
+	padding: 7px;
+	background: #eee;
+	border: 1px solid #eee;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -border-radius: 10px;
+    border-radius: 10px;
+}
+
+ul.errorlist li {
+	color: #e9322d;
+	
+}
+/* ul.errorlist {
+	background-image: url('/static/images/error.png');
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding-left: 25px;    
+} */
+
+/* h2 tag for tool header */
+h2 {
+    color: #666699;
+    font-weight: bold;
+    text-shadow: 0px 2px 0px #ccc;
+	margin: 3px 0 3px 0;
+}
+
+/* loading spinner image and text */
+img#loading { 
+	padding-right: 9px; 
+	border: 0; 
+	height: 25px;
+	vertical-align: middle; 
+}
+
+#loading-text {
+	font-style: italic;
+	font-size: 14px;
+}
+
+/* wrapper for the banner & navigation */
+.header-wrap { 
+	background: #1d6ea5;
+    height: 60px;
+    position: relative;
+    margin:0;
+    padding:10px 0 15px 0;
+}
+.header-wrap a {
+    text-decoration: none;
+    padding:10px;
+}
+/* iedb banner */
+.header-wrap span {
+    font: normal 32px/68px "Lucida Grande", Arial, sans-serif;
+    color: #fff;
+    text-shadow:1px 1px 3px #222;
+    margin:5px;
+}
+
+/* navigation tabs */
+.iedb-nav {
+	width:100%;
+	float:left;
+	font:bold 11px arial, sans-serif; /* set font as desired */
+	margin:2em 0 2em 0;
+	border-bottom:1px solid #999;
+}
+.iedb-nav ul {
+	margin:0;
+	padding-left:10px;
+}
+.iedb-nav li {
+	display:inline;
+	float:left;
+	padding:4px 1px 4px 0;
+	margin-right:5px;
+	border:1px solid #999;
+	border-bottom:none;
+	background-color:#C8D6E3;
+}
+.iedb-nav li a {
+	padding:0 7px 0 7px;
+	outline:none;
+	overflow:hidden;
+	color:#444;
+	letter-spacing:0.5px;
+	text-decoration:none;	
+	text-shadow:0px 1px 0.3px #999;
+}
+.iedb-nav li a:hover {
+	padding:4px 7px 5px 7px;
+	background:#fff;
+	color:#000;
+}
+.iedb-nav li a.selected {
+	padding:4px 7px 5px 7px;
+	background:#fff;
+	color:#000;
+}
+
+/* home & user input page */
+table.entry {
+	border:2px solid #ddd;
+}
+table.entry tr th {
+	padding:5px;
+	color:#fff;
+	line-height:1.4;
+	padding-top:5px;
+	background-color:#1d6ea5;
+	text-align:center;
+	border:1px solid #fff;
+}
+table.entry td {
+	color:#222;
+	padding:3px 5px;
+	background-color:#c8d6e3;
+	vertical-align:middle;
+	border:1px solid #fff;
+}
+
+/* Sequence format */
+.sequence {
+	font-size:12px;
+	font-family:monospace,"Courier New",Courier;
+	text-align:left;
+}
+
+/* custome file upload button to href link  */
+.file-wrapper {
+  cursor:pointer;
+  display:inline-block;
+  overflow:hidden;
+  position:relative;
+  vertical-align:middle;
+  padding-left:5px;
+}
+.file-wrapper input {
+  cursor:pointer;
+  /*font-size:100px;*/
+  height:100%;
+  filter:alpha(opacity=1);
+  -moz-opacity:0.01;
+  opacity:0.01;
+  position:absolute;
+  right:0;
+  top:0;
+}
+.file-wrapper .button {
+  background: #eee;
+  border: 1px solid #999;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 5px;
+  color: #222;
+  cursor: pointer;
+  display: inline-block;
+  padding: 2px 4px;
+}
+.file-wrapper a {
+  font-size: 11px;
+  vertical-align: middle;
+  font-style: italic;
+  color: blue;
+}
+
+.show_hide { 
+	display: none; 
+}
+
+/* common for all pages */ 
+.note { 
+	background: #fff;
+	color: #222;
+	font-size: 120%;
+}
+.desc-no-indent { 
+	background: #fff;
+	color: #222;
+	font-size: 120%;
+	width: 98%;
+}
+.clr_top {
+	margin-top: 10px;
+}
+.clr_bottom { 
+	margin-bottom:10px;
+}
+
+/* mainly used for help pages */
+.desc-title { 
+	font-weight: bold;
+	font-size: 18px;
+	color: #666699;
+	text-shadow: 0px 2px 0px #ccc;
+	margin: 14px 0 3px 0; 
+}
+.desc { 
+	background: #fff;
+	padding: 2px 12px;
+	color: #222;
+	font-size: 15px;
+	margin-right: 25px;
+}
+.section { 
+	background: #fff;
+	padding: 2px 10px;
+	border-bottom: 1px dotted #eee;
+	font-size: 15px;
+	margin-right: 25px;
+}
+.section pre { 
+	font-size: 13px;
+}
+.subtitle {
+	font-weight: bold;
+	font-size: 16px;
+	font-style: italic;
+	color: #333;
+    text-shadow: 0px 2px 0px #ccc;
+    margin: 12px 0 3px 0;
+}
+.sub-subtitle {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 13px;
+	color: #333;
+	text-shadow: 0px 2px 0px #ccc;
+    margin: 12px 0 3px 0;
+}
+
+.sub-subtitle .section { 
+	font-size: 100%;
+	font-weight: normal;
+	font-style: normal;
+	text-shadow: none;
+}
+.section ul { 
+	padding: 0;
+	margin: 5px 0 15px 18px; 
+}
+.section ol { 
+	padding: 0;
+	margin: 5px 0 15px 18px; 
+}
+.eg{
+	font-family: "courier new",courier,monospace;
+	font-size: 13px;
+	margin-top: 5px; 
+	margin-left: 15px; 
+}
+.method-version-table {
+	margin-top: 5px;
+	margin-left: 15px;
+}
+.method-version-table th {
+	background-color: #ccc;
+}
+.method-version-table th, td {
+	border: 1px solid #aaa;
+	padding: 5px;
+}
+
+
+
+
+/* input sequence table in the result */
+table.input_table .sequence {
+	font-family:monospace,"Courier New",Courier;
+	text-align:left;
+}
+table.input_table .even_row td {
+	background:#eee;
+}
+table.input_table {
+	min-width:300px;
+	max-width:600px;
+	background-color:#ccc;
+	margin:1px 0pt 15px;
+	font-size:9pt;
+	border:1px solid #666;
+}
+table.input_table thead tr th, 
+table.input_table tfoot tr th {
+	background-color:#666;
+	padding:4px;
+	color:#fff;
+	border:1px solid #000;
+}
+table.input_table tbody td {
+	color:#222;
+	padding:4px;
+	background-color:#FFF;
+	vertical-align:top;
+	border:1px solid #666;
+}
+table.input_table tbody tr.odd td { 
+	background-color:#F0F0F6;
+}
+
+
+
+/* result table sorting */
+table.tablesorter {
+	background-color: #CDCDCD;
+	margin:1px 0pt 5px;
+	font-size: 8pt;
+	text-align: left;
+}
+table.tablesorter thead tr th, 
+table.tablesorter tfoot tr th {
+	background-color: rgb(51,102,153);
+	border: 1px solid #666;
+	font-size: 8pt;
+	padding: 5px;
+	color: #fff;
+}
+table.tablesorter thead tr .tablesorter-header {
+	background-image: url("/static/images/bg.gif");
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+	padding:5px 18px 5px 5px;
+}
+table.tablesorter tbody td {
+	color: #222;
+	padding: 5px;
+	background-color: #FFF;
+	vertical-align: top;
+}
+table.tablesorter tbody tr.odd td {
+	background-color:#F0F0F6;
+}
+table.tablesorter thead tr .tablesorter-headerAsc {
+	background-image: url("/static/images/asc.gif");
+}
+table.tablesorter thead tr .tablesorter-headerDesc {
+	background-image: url("/static/images/desc.gif");
+}
+table.tablesorter thead tr .tablesorter-headerDesc, table.tablesorter thead tr .tablesorter-headerAsc {
+background-color: #8dbdd8;
+}
+table.tablesorter td{
+	text-align:center;
+}
+table.tablesorter .sequence {
+	font-family:monospace,"Courier New",Courier;
+	text-align:left;
+}
+table.tablesorter .method_used {
+	text-align:left;
+}
+
+
+/* mainly used for license agreement text in the download page */
+table#license {
+	width: 1000px;
+	border-style: inset;
+	word-wrap: break-word; 
+}
+#license td {
+	line-height: normal;
+	font-size: 110%;
+	background-color: #c8d6e3;
+	color: #222;
+	padding: 5px;
+	vertical-align: middle;
+	border: 1px solid #fff;
+}
+table#license .text {
+	height: 80px;
+	width: 570px;
+	overflow: auto;
+}
+
+/* mainly used for download page - generic section */
+#generic-downloads {
+	width: 980px;
+	padding: 8px;
+	background-color: #c8d6e3;
+	border: px solid #fff;
+	line-height: ormal;
+	font-size: 120%;
+}
+#generic-downloads ul { 
+	padding: 0;
+	margin: 5px 0 5px 20px; 
+}
+#generic-downloads hr { 
+	border: none;
+    height: 1px;
+    color: #535151; 
+    background-color: #535151;
+}
+#generic-downloads h3 {
+	margin:4px 0;
+}
+
+/* result page */
+.result_not_found {
+	text-align: center;
+	font-size: 13px;
+	background: #FAFAFA;
+	border: 1px solid #eee;
+	padding: 5px;
+}
+
+/* citations */
+#citation-result-link a {
+	margin-top:10px;
+	margin-bottom:20px;
+	font-size:120%;
+	text-decoration:none;
+}
+
+#citation {
+	margin:10px 0 10px 2px;
+	max-width:700px;
+	font-size:120%;
+	line-height:normal;
+}
+#citation .title {
+	font-weight:bold;
+}
+#citation div ol {
+	font-family:Times,"Times New Roman";
+	margin:5px 0 3px 20px;
+}
+
+
+/* download result in csv link */
+#dowload-result-link a {
+	margin-top:10px;
+	margin-bottom:20px;
+	font-size:120%;
+	text-decoration:none;
+}
+
+#dowload-result-link img {
+	border:0;
+	width:15px;
+	height:15px;
+	position:relative;
+	top:1px;
+	margin-left:5px;
+}
+
+
+
+/* JSmol viewer */
+.jsmol-viewer {
+	/* margin: 0px auto; */
+}
+.jsmol_viewer td {
+	text-align:center; 
+    vertical-align:middle;
+    
+}
+.jsmol-title {
+	text-align: left;
+	padding: 5px;
+	font-size: 120%;
+	font-weight: bold;
+}
+.jsmol-footer td {
+	font-size:110%;
+	padding: 2px 10px;
+	text-align:center; 
+    vertical-align:middle;
+}
+
+.ABR-H1 { 
+	color:#FFA500; 
+}
+.ABR-H2 { 
+	color:#FF1493; 
+}
+.ABR-H3 { 
+	color:#8B0000; 
+}
+
+.ABR-L1 { 
+	color:#00BFFF; 
+}
+.ABR-L2 { 
+	color:#0000CD; 
+}
+.ABR-L3 { 
+	color:#32CD32; 
+}
+
+.non-Ab { 
+	color:#BDB76B; 
+}
+.not-chain { 
+	color:#808080; 
+}
+
+.chain_info { 
+	padding: 3px; 
+}
+.chain_id { 
+	padding-right:5px; 
+}
+
+
+/* error msgs */
+.errors {
+	color:red;
+	font-size:115%;
+	margin:2px 0 2px 10px;
+}
+
+.duplicates {
+	background:#faf8cc;
+	min-width:750px;
+	width:800px;
+	border:1px solid #eee;
+	padding:5px;
+	font-size:13px;
+	margin-bottom:5px;
+}
+.duplicates span {
+	font-style:italic;
+	display:block;
+}
+.invalid {
+	background:#ff8080;
+	min-width:750px;
+	width:800px;
+	border:1px solid #eee;
+	padding:5px;
+	font-size:13px;
+	margin-bottom:5px;
+}
+.invalid img {
+	width:17px;
+	border:0;
+	vertical-align:bottom;
+}
+.invalid ul {
+	list-style-position:inside;
+	font-style:italic;
+}
+
+.msg-no-result {
+	text-align:center;
+	font:13px/110% monospace,"courier new",courier;
+	background:#FAFAFA;
+	border:1px solid #eee;
+	padding:5px;
+}
+
+#spinnerImage { 
+	width: 35px;
+	display:none; 
+} 
+
+
+
+/* end of css  - common to all tools */

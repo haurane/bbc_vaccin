@@ -1,0 +1,20 @@
+/* title */
+.output_title {
+	margin-top:10px;
+	margin-bottom:3px;
+	font-weight:bold;
+	font-size:123%;
+}
+
+table.seqformat {
+	margin:10px;	
+}
+
+table.seqformat td{
+	border:0;
+	padding:1px 3px;
+}
+
+table.seqformat td.seqnum {
+	text-align:right;
+}
